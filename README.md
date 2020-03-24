@@ -1,2 +1,2 @@
-# nextjs-todo-app-test
-A simple todo application built with Next.js + GraphQL
+# nextjs-todo-app
+A simple todo application built with Next.js
