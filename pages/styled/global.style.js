@@ -27,7 +27,7 @@ injectGlobal`
     text-transform: uppercase;
     color: #f1f1f1;
     background: #595a5c;
-    padding: 40px;
+    padding: 20px;
     border-bottom: 1px solid #474747;
   }
   .note {
