@@ -88,10 +88,21 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
+
+/***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js":
 /*!**********************************************************************!*\
@@ -137,6 +148,28 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "co
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js ***!
@@ -145,6 +178,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "co
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype-of */ "core-js/library/fn/object/get-prototype-of");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core-js/library/fn/object/keys");
 
 /***/ }),
 
@@ -339,6 +383,49 @@ function _inherits(subClass, superClass) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js":
 /*!**************************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js ***!
@@ -461,16 +548,76 @@ function _typeof(obj) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-apollo */ "react-apollo");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header/Header */ "./pages/components/Header/Header.js");
+/* harmony import */ var _components_Content_Content__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Content/Content */ "./pages/components/Content/Content.js");
+/* harmony import */ var _heplers_apolloClient__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../heplers/apolloClient */ "./pages/heplers/apolloClient.js");
+var _jsxFileName = "/Users/konstantinfilipenkov/Work/React/Git/nextjs-todo-app-test/pages/App/Home.js";
+
+
+
+
+
+
+var Home = function Home() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_1__["ApolloProvider"], {
+    client: _heplers_apolloClient__WEBPACK_IMPORTED_MODULE_4__["default"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Content_Content__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./pages/components/Content/Content.js":
+/*!*********************************************!*\
+  !*** ./pages/components/Content/Content.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_Note__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Note */ "./pages/components/Note.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _ContentHOC__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ContentHOC */ "./pages/components/Content/ContentHOC.js");
+/* harmony import */ var _Note_Note__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../Note/Note */ "./pages/components/Note/Note.js");
 
 
 
@@ -478,41 +625,51 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Project\\React\\todo-list-app\\pages\\App\\Home.js";
+
+var _jsxFileName = "/Users/konstantinfilipenkov/Work/React/Git/nextjs-todo-app-test/pages/components/Content/Content.js";
 
 
 
-var Home =
+
+var Content =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Home, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Content, _Component);
 
-  function Home(props) {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__["default"])(Content, null, [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      if (nextProps.data.todos && _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(nextProps.data.todos) !== _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(prevState.notes)) {
+        return {
+          notes: nextProps.data.todos
+        };
+      }
+
+      return false;
+    }
+  }]);
+
+  function Content(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Home);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Content);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Home).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Content).call(this, props));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleKeyPress", function (event) {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleKeyPress", function (event) {
       if (event.key === "Enter") {
-        var noteArr = _this.state.notes;
-        noteArr.push(_this.state.noteText);
-
-        _this.setState({
-          noteText: ''
-        });
+        _this.addNote();
       }
     });
 
     _this.state = {
-      noteText: '',
+      noteText: "",
       notes: []
     };
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Home, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__["default"])(Content, [{
     key: "updateNoteText",
     value: function updateNoteText(noteText) {
       this.setState({
@@ -522,73 +679,88 @@ function (_Component) {
   }, {
     key: "addNote",
     value: function addNote() {
-      if (this.state.noteText === '') {
+      var noteText = this.state.noteText;
+
+      if (!noteText.length) {
         return;
       }
 
-      var noteArr = this.state.notes;
-      noteArr.push(this.state.noteText);
+      this.props.add({
+        title: noteText
+      });
       this.setState({
-        noteText: ''
+        noteText: ""
       });
       this.textInput.focus();
     }
   }, {
     key: "deleteNote",
-    value: function deleteNote(index) {
-      var noteArr = this.state.notes;
-      noteArr.splice(index, 1);
-      this.setState({
-        notes: noteArr
-      });
+    value: function deleteNote(id) {
+      this.props.destroy(id);
     }
   }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
-      var notes = this.state.notes.map(function (val, key) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Note__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          key: key,
-          text: val,
+      var _this$props$data = this.props.data,
+          loading = _this$props$data.loading,
+          error = _this$props$data.error;
+
+      if (loading) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 61
+          },
+          __self: this
+        }, "...Loading");
+      }
+
+      if (error) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 65
+          },
+          __self: this
+        }, "Error!");
+      }
+
+      var notes = this.state.notes.map(function (val) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Note_Note__WEBPACK_IMPORTED_MODULE_10__["default"], {
+          key: val.id,
+          text: val.title,
           deleteMethod: function deleteMethod() {
-            return _this2.deleteNote(key);
+            return _this2.deleteNote(val.id);
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 43
+            lineNumber: 69
           },
           __self: this
         });
       });
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "container",
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8__["Fragment"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 77
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "header",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      }, "Todo App"), notes, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, notes, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "button",
         onClick: this.addNote.bind(this),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 80
         },
         __self: this
-      }, "+"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
+      }, "+"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
         placeholder: "Enter Notes",
         type: "text",
         className: "input",
         ref: function ref(input) {
-          _this2.textInput = input;
+          return _this2.textInput = input;
         },
         value: this.state.noteText,
         onChange: function onChange(noteText) {
@@ -597,74 +769,247 @@ function (_Component) {
         onKeyPress: this.handleKeyPress.bind(this),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 84
         },
         __self: this
       }));
     }
   }]);
 
-  return Home;
-}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+  return Content;
+}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Home);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_ContentHOC__WEBPACK_IMPORTED_MODULE_9__["default"])(Content));
 
 /***/ }),
 
-/***/ "./pages/components/Note.js":
-/*!**********************************!*\
-  !*** ./pages/components/Note.js ***!
-  \**********************************/
+/***/ "./pages/components/Content/ContentHOC.js":
+/*!************************************************!*\
+  !*** ./pages/components/Content/ContentHOC.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! recompose */ "recompose");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(recompose__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-apollo */ "react-apollo");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./queries */ "./pages/components/Content/queries.js");
+/* harmony import */ var _mutation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./mutation */ "./pages/components/Content/mutation.js");
 
 
 
 
-
-var _jsxFileName = "C:\\Project\\React\\todo-list-app\\pages\\components\\Note.js";
-
-
-var Note =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Note, _Component);
-
-  function Note() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Note);
-
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Note).apply(this, arguments));
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_0__["compose"])(Object(react_apollo__WEBPACK_IMPORTED_MODULE_1__["graphql"])(_queries__WEBPACK_IMPORTED_MODULE_2__["GET_TODOS"]), Object(react_apollo__WEBPACK_IMPORTED_MODULE_1__["graphql"])(_mutation__WEBPACK_IMPORTED_MODULE_3__["ADD_TODO"], {
+  props: function props(_ref) {
+    var mutate = _ref.mutate;
+    return {
+      add: function add(title) {
+        return mutate({
+          variables: title,
+          refetchQueries: [{
+            query: _queries__WEBPACK_IMPORTED_MODULE_2__["GET_TODOS"]
+          }]
+        });
+      }
+    };
   }
+}), Object(react_apollo__WEBPACK_IMPORTED_MODULE_1__["graphql"])(_mutation__WEBPACK_IMPORTED_MODULE_3__["DESTROY_TODO"], {
+  props: function props(_ref2) {
+    var mutate = _ref2.mutate;
+    return {
+      destroy: function destroy(id) {
+        return mutate({
+          variables: {
+            id: id.toString()
+          },
+          refetchQueries: [{
+            query: _queries__WEBPACK_IMPORTED_MODULE_2__["GET_TODOS"]
+          }]
+        });
+      }
+    };
+  }
+})));
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Note, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "note",
-        onClick: this.props.deleteMethod,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7
-        },
-        __self: this
-      }, this.props.text);
-    }
-  }]);
+/***/ }),
 
-  return Note;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+/***/ "./pages/components/Content/mutation.js":
+/*!**********************************************!*\
+  !*** ./pages/components/Content/mutation.js ***!
+  \**********************************************/
+/*! exports provided: ADD_TODO, DESTROY_TODO */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_TODO", function() { return ADD_TODO; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DESTROY_TODO", function() { return DESTROY_TODO; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-boost */ "apollo-boost");
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(apollo_boost__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  mutation destroyTodo($id: String!) {\n    destroy(id: $id) {\n      id\n    }\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  mutation addTodo($title: String!) {\n    add(title: $title) {\n      id\n      title\n    }\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var ADD_TODO = Object(apollo_boost__WEBPACK_IMPORTED_MODULE_1__["gql"])(_templateObject());
+var DESTROY_TODO = Object(apollo_boost__WEBPACK_IMPORTED_MODULE_1__["gql"])(_templateObject2());
+
+/***/ }),
+
+/***/ "./pages/components/Content/queries.js":
+/*!*********************************************!*\
+  !*** ./pages/components/Content/queries.js ***!
+  \*********************************************/
+/*! exports provided: GET_TODOS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_TODOS", function() { return GET_TODOS; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-boost */ "apollo-boost");
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(apollo_boost__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  query todoQuery {\n    todos {\n      id\n      title\n      completed\n    }\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var GET_TODOS = Object(apollo_boost__WEBPACK_IMPORTED_MODULE_1__["gql"])(_templateObject());
+
+/***/ }),
+
+/***/ "./pages/components/Header/Header.js":
+/*!*******************************************!*\
+  !*** ./pages/components/Header/Header.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/konstantinfilipenkov/Work/React/Git/nextjs-todo-app-test/pages/components/Header/Header.js";
+
+
+var Header = function Header() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, "Todo App");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./pages/components/Note/Note.js":
+/*!***************************************!*\
+  !*** ./pages/components/Note/Note.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/konstantinfilipenkov/Work/React/Git/nextjs-todo-app-test/pages/components/Note/Note.js";
+
+
+var Note = function Note(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "note",
+    onClick: props.deleteMethod,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, props.text);
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Note);
+
+/***/ }),
+
+/***/ "./pages/heplers/apolloClient.js":
+/*!***************************************!*\
+  !*** ./pages/heplers/apolloClient.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var apollo_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-client */ "apollo-client");
+/* harmony import */ var apollo_client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(apollo_client__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-link-http */ "apollo-link-http");
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(apollo_link_http__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var apollo_cache_inmemory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-cache-inmemory */ "apollo-cache-inmemory");
+/* harmony import */ var apollo_cache_inmemory__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(apollo_cache_inmemory__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+var enhancedFetch = function enhancedFetch(url, init) {
+  return fetch(url, Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, init, {
+    headers: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, init.headers, {
+      "Target-URL": "https://todo-mongo-graphql-server.herokuapp.com"
+    })
+  })).then(function (response) {
+    return response;
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (new apollo_client__WEBPACK_IMPORTED_MODULE_1___default.a({
+  link: Object(apollo_link_http__WEBPACK_IMPORTED_MODULE_2__["createHttpLink"])({
+    uri: "http://localhost:8080",
+    fetch: enhancedFetch // credentials: "same-origin",
+    // fetchOptions: {
+    //   mode: 'no-cors'
+    // },
+    // useGETForQueries: true
+
+  }),
+  cache: new apollo_cache_inmemory__WEBPACK_IMPORTED_MODULE_3__["InMemoryCache"]()
+}));
 
 /***/ }),
 
@@ -681,7 +1026,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _App_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App/Home */ "./pages/App/Home.js");
 /* harmony import */ var _styled_global_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styled/global.style */ "./pages/styled/global.style.js");
-var _jsxFileName = "C:\\Project\\React\\todo-list-app\\pages\\index.js";
+var _jsxFileName = "/Users/konstantinfilipenkov/Work/React/Git/nextjs-todo-app-test/pages/index.js";
 
 
 
@@ -690,7 +1035,7 @@ var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App_Home__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 5
     },
     __self: this
   });
@@ -715,7 +1060,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,600&subset=latin-ext');\n\n  * {\n    margin: 0px;\n    box-sizing: border-box;\n  }\n\n  body {\n    margin: 0;\n    padding: 0;\n    background: hsl(0, 1%, 81%);\n    font-family: 'Raleway', sans-serif;\n  }\n\n  .container {\n    padding-bottom: 80px;\n  }\n  \n  .header {\n    font-size: 22px;\n    font-weight: bold;\n    font-style: italic;\n    text-align: center;\n    text-transform: uppercase;\n    color: #f1f1f1;\n    background: #595a5c;\n    padding: 40px;\n    border-bottom: 1px solid #474747;\n  }\n  .note {\n    color: #727070;\n    padding: 40px;\n    margin: 20px;\n    background: #fff;\n    border: solid 1px #e9e9e9;\n    cursor: pointer;\n    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);\n    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);\n    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);\n    -webkit-transition:background-color .2s ease-out;\n    -o-transition:background-color .2s ease-out;\n    transition:background-color .2s ease-out\n  }\n  .note:hover {\n    transform: scale(1.02);\n    background-color: #dbb5c7;\n  }\n  .button {\n    position: fixed;\n    z-index: 1;\n    right: 40px;\n    bottom: 40px;\n    width: 50px;\n    height: 50px;\n    border-radius: 20%;\n    text-align: center;\n    line-height: 50px;\n    font-size: 28px;\n    font-weight: bold;\n    color: #f1f1f1;\n    background: #595a5c;\n    cursor: pointer;\n    box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.8);\n    -webkit-box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.8);\n    -moz-box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.8);\n    transition: transform .06s ease;\n  }\n  .button:hover {\n    transform: scale(1.05);\n  }\n  .input {\n    position: fixed;\n    bottom: 0;\n    width: 100%;\n    height: 80px;\n    line-height: 80px;\n    padding: 0 20px;\n    border: none;\n    outline: none;\n    background: #595a5c;\n    font-size: 16px;\n    color: #f1f1f1;\n    border-top: 1px solid #474747;\n  }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,600&subset=latin-ext');\n\n  * {\n    margin: 0px;\n    box-sizing: border-box;\n  }\n\n  body {\n    margin: 0;\n    padding: 0;\n    background: hsl(0, 1%, 81%);\n    font-family: 'Raleway', sans-serif;\n  }\n\n  .container {\n    padding-bottom: 80px;\n  }\n  \n  .header {\n    font-size: 22px;\n    font-weight: bold;\n    font-style: italic;\n    text-align: center;\n    text-transform: uppercase;\n    color: #f1f1f1;\n    background: #595a5c;\n    padding: 20px;\n    border-bottom: 1px solid #474747;\n  }\n  .note {\n    color: #727070;\n    padding: 40px;\n    margin: 20px;\n    background: #fff;\n    border: solid 1px #e9e9e9;\n    cursor: pointer;\n    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);\n    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);\n    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);\n    -webkit-transition:background-color .2s ease-out;\n    -o-transition:background-color .2s ease-out;\n    transition:background-color .2s ease-out\n  }\n  .note:hover {\n    transform: scale(1.02);\n    background-color: #dbb5c7;\n  }\n  .button {\n    position: fixed;\n    z-index: 1;\n    right: 40px;\n    bottom: 40px;\n    width: 50px;\n    height: 50px;\n    border-radius: 20%;\n    text-align: center;\n    line-height: 50px;\n    font-size: 28px;\n    font-weight: bold;\n    color: #f1f1f1;\n    background: #595a5c;\n    cursor: pointer;\n    box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.8);\n    -webkit-box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.8);\n    -moz-box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.8);\n    transition: transform .06s ease;\n  }\n  .button:hover {\n    transform: scale(1.05);\n  }\n  .input {\n    position: fixed;\n    bottom: 0;\n    width: 100%;\n    height: 80px;\n    line-height: 80px;\n    padding: 0 20px;\n    border: none;\n    outline: none;\n    background: #595a5c;\n    font-size: 16px;\n    color: #f1f1f1;\n    border-top: 1px solid #474747;\n  }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -729,15 +1074,70 @@ Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["injectGlobal"])(_template
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Project\React\todo-list-app\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/konstantinfilipenkov/Work/React/Git/nextjs-todo-app-test/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "apollo-boost":
+/*!*******************************!*\
+  !*** external "apollo-boost" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("apollo-boost");
+
+/***/ }),
+
+/***/ "apollo-cache-inmemory":
+/*!****************************************!*\
+  !*** external "apollo-cache-inmemory" ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("apollo-cache-inmemory");
+
+/***/ }),
+
+/***/ "apollo-client":
+/*!********************************!*\
+  !*** external "apollo-client" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("apollo-client");
+
+/***/ }),
+
+/***/ "apollo-link-http":
+/*!***********************************!*\
+  !*** external "apollo-link-http" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("apollo-link-http");
+
+/***/ }),
+
+/***/ "core-js/library/fn/json/stringify":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/json/stringify" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -785,6 +1185,28 @@ module.exports = require("core-js/library/fn/object/freeze");
 
 /***/ }),
 
+/***/ "core-js/library/fn/object/get-own-property-descriptor":
+/*!************************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-descriptor" ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-symbols":
+/*!*********************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "core-js/library/fn/object/get-prototype-of":
 /*!*************************************************************!*\
   !*** external "core-js/library/fn/object/get-prototype-of" ***!
@@ -793,6 +1215,17 @@ module.exports = require("core-js/library/fn/object/freeze");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/get-prototype-of");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/keys":
+/*!*************************************************!*\
+  !*** external "core-js/library/fn/object/keys" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/keys");
 
 /***/ }),
 
@@ -837,6 +1270,28 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-apollo":
+/*!*******************************!*\
+  !*** external "react-apollo" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-apollo");
+
+/***/ }),
+
+/***/ "recompose":
+/*!****************************!*\
+  !*** external "recompose" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("recompose");
 
 /***/ }),
 
